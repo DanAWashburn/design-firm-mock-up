@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
+$charcoal: #324860;
+$carrot: #F8911B;
+$darkgrey: #555555;
+
 .mid-section {
   display: flex;
   justify-content: space-evenly;
@@ -14,29 +19,32 @@
 #tile-one-big::before {
   background: url("../images/house-four.jpg") center center;
   background-size: cover;
-  animation: fadeIn 0.75s ease-in;
+  background-position: 70% 50%;
+  animation: fadeIn 1s ease-in;
 }
 
 #tile-two-big::before {
     background: url("../images/house-two.jpg") center center;
   background-size: cover;
-  animation: fadeIn 1s ease-in;
+  background-position: 35% 50%;
+  animation: fadeIn 1.25s ease-in;
 }
 
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
-  animation: fadeIn 1.25s ease-in;
+  background-position: 35% 50%;
+  animation: fadeIn 1.5s ease-in;
 }
 
 .section-tile-big::before {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 30px;
+    bottom: 30px;
+    left: 15px;
+    right: 15px;
 }
 
 @keyframes fadeIn {
@@ -77,7 +85,7 @@
 
 
 #tile-one-small::before {
-  background: url("../images/house-one.jpg") center center;
+  background: url("../images/house-four.jpg") center center;
   background-size: cover;
 }
 
@@ -100,16 +108,20 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .4;
+    opacity: .3;
   }
 }
 
 a {
-  color: #093b60;
+  color: $darkgrey;
+  font-family: Farro;
+  font-weight: 700;
 }
 
 a:visited {
-  color: #093b60;
+  color: $charcoal;
+  font-family: Farro;
+  font-weight: 700;
 }
 
 a:link {
@@ -121,7 +133,7 @@ a:visited {
 }
 
 .section-tile-big:hover:before {
-  opacity: .5;
+  opacity: .4;
 }
 
 .text {
