@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
 $darkgrey: #555555;
+$carrot: #F8911B;
 
 .heading {
   display: flex;
@@ -8,25 +9,38 @@ $darkgrey: #555555;
 
 .topnav {
   overflow: hidden;
-  background-color: $darkgrey;
+  background-color: $carrot;
+
 }
 
-//May need to make this only if over a certain screen font-size
-.nav {
-  display: flex;
-  width: auto;
-  justify-content: space-evenly;
+
+@media screen and (min-width: 600px) {
+  .topnav {
+
+    display: flex;
+  flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
+
+@media screen and (max-width: 599px) {
+  .topnav {
+
+    display: block;
+  }
+}
+
 
 
 .topnav a {
-  float: left;
+
   //display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: Farro;
 }
 
 .topnav a:hover {
@@ -70,4 +84,5 @@ $darkgrey: #555555;
   font-family: Electrolize;
   font-size: 450%;
   color: $darkgrey;
+  margin: 25px 0px 25px 0px;
 }
