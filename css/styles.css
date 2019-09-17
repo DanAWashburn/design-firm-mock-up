@@ -1,5 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap");
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Electrolize"), local("Electrolize-Regular"), url("../fonts/electrolize-v8-latin-regular.woff2") format("woff2"), url("../fonts/electrolize-v8-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Ubuntu Regular"), local("Ubuntu-Regular"), url("../fonts/ubuntu-v14-latin-regular.woff2") format("woff2"), url("../fonts/ubuntu-v14-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/ubuntu-v14-latin-700.woff2") format("woff2"), url("../fonts/ubuntu-v14-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+h1 {
+  color: #444;
+  font-family: "Electrolize", sans-serif; }
+
+h2 {
+  color: #444;
+  font-family: "Ubuntu", sans-serif; }
+
+a {
+  color: #444;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700; }
+
+a:visited {
+  color: #444;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
 .heading {
   display: flex;
   justify-content: center; }
@@ -29,10 +74,10 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Farro; }
+  font-family: "Ubuntu"; }
 
 .topnav a:hover {
-  color: #555555; }
+  color: #444; }
 
 .topnav a.active {
   background-color: #4CAF50;
@@ -61,9 +106,7 @@
     text-align: left; } }
 
 .title {
-  font-family: Electrolize;
   font-size: 6em;
-  color: #555555;
   margin: 25px 0px 25px 0px; }
 
 .mid-section {
@@ -73,37 +116,36 @@
 .section-tile-big {
   position: relative;
   z-index: 5;
-  height: 600px;
-  width: 400px;
-  padding: 25px;
-  margin: 20px; }
+  height: 35vw;
+  width: 25vw;
+  margin: 5vw 3vw; }
 
 #tile-one-big::before {
   background: url("../images/house-four.jpg") center center;
   background-size: cover;
   background-position: 70% 50%;
-  animation: fadeIn 1s ease-in; }
+  animation: fadeIn 1.2s ease-in; }
 
 #tile-two-big::before {
   background: url("../images/house-two.jpg") center center;
   background-size: cover;
   background-position: 35% 50%;
-  animation: fadeIn 1.25s ease-in; }
+  animation: fadeIn 1.6s ease-in; }
 
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
   background-position: 35% 50%;
-  animation: fadeIn 1.5s ease-in; }
+  animation: fadeIn 2s ease-in; }
 
 .section-tile-big::before {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 30px;
-  bottom: 30px;
-  left: 15px;
-  right: 15px; }
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 @keyframes fadeIn {
   from {
@@ -146,26 +188,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .3; } }
-
-a {
-  color: #555555;
-  font-family: Farro;
-  font-weight: 700; }
-
-a:visited {
-  color: #324860;
-  font-family: Farro;
-  font-weight: 700; }
-
-a:link {
-  text-decoration: none; }
-
-a:visited {
-  text-decoration: none; }
+    opacity: 0.3; } }
 
 .section-tile-big:hover:before {
-  opacity: .4; }
+  opacity: 0.4; }
 
 .text {
   visibility: hidden;

@@ -1,52 +1,46 @@
-@import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
-$charcoal: #324860;
-$carrot: #F8911B;
-$darkgrey: #555555;
-
 .mid-section {
   display: flex;
   justify-content: space-evenly;
 }
+
 .section-tile-big {
   position: relative;
   z-index: 5;
-  height: 600px;
-  width: 400px;
-  padding: 25px;
-  margin: 20px;
+  height: 35vw;
+  width: 25vw;
+  margin: 5vw 3vw;
 }
 
 #tile-one-big::before {
   background: url("../images/house-four.jpg") center center;
   background-size: cover;
   background-position: 70% 50%;
-  animation: fadeIn 1s ease-in;
+  animation: fadeIn 1.2s ease-in;
 }
 
 #tile-two-big::before {
-    background: url("../images/house-two.jpg") center center;
+  background: url("../images/house-two.jpg") center center;
   background-size: cover;
   background-position: 35% 50%;
-  animation: fadeIn 1.25s ease-in;
+  animation: fadeIn 1.6s ease-in;
 }
 
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
   background-position: 35% 50%;
-  animation: fadeIn 1.5s ease-in;
+  animation: fadeIn 2s ease-in;
 }
 
 .section-tile-big::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 30px;
-    bottom: 30px;
-    left: 15px;
-    right: 15px;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -57,22 +51,21 @@ $darkgrey: #555555;
   }
 }
 
-.section-tile-small{
-   display: none;
+.section-tile-small {
+  display: none;
 }
-
-@media only screen and (max-width: 1100px){
-    .mid-section {
+@media only screen and (max-width: 1100px) {
+  .mid-section {
     flex-direction: column;
-      align-items: center;
+    align-items: center;
   }
 
-    .section-tile-big{
-     display: none;
-   }
+  .section-tile-big {
+    display: none;
+  }
 
-   .section-tile-small{
-     display: block;
+  .section-tile-small {
+    display: block;
     position: relative;
     z-index: 5;
     height: 300px;
@@ -80,25 +73,22 @@ $darkgrey: #555555;
     padding: 25px;
     font-size: 300%;
     margin: 20px;
+  }
 
-   }
+  #tile-one-small::before {
+    background: url("../images/house-four.jpg") center center;
+    background-size: cover;
+  }
 
+  #tile-two-small::before {
+    background: url("../images/house-two.jpg") center center;
+    background-size: cover;
+  }
 
-#tile-one-small::before {
-  background: url("../images/house-four.jpg") center center;
-  background-size: cover;
-}
-
-#tile-two-small::before {
-  background: url("../images/house-two.jpg") center center;
-  background-size: cover;
-
-}
-
-#tile-three-small::before {
-  background: url("../images/house-three.jpg") center center;
-  background-size: cover;
-}
+  #tile-three-small::before {
+    background: url("../images/house-three.jpg") center center;
+    background-size: cover;
+  }
 
   .section-tile-small::before {
     content: "";
@@ -108,41 +98,21 @@ $darkgrey: #555555;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
-a {
-  color: $darkgrey;
-  font-family: Farro;
-  font-weight: 700;
-}
-
-a:visited {
-  color: $charcoal;
-  font-family: Farro;
-  font-weight: 700;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
 .section-tile-big:hover:before {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .text {
-  visibility:hidden;
+  visibility: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  visibility:hidden;
+  visibility: hidden;
   font-size: 4em;
   font-wieght: 700;
 }
@@ -157,5 +127,5 @@ a:visited {
 }
 
 .section-tile-big:hover .text {
-visibility:visible;
+  visibility: visible;
 }

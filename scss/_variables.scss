@@ -1,19 +1,66 @@
-$title: 'Electrolize', sans-serif;
-$darkgrey: #555555;
+@font-face {
+  font-family: 'Electrolize';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Electrolize'), local('Electrolize-Regular'),
+       url('../fonts/electrolize-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/electrolize-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-//Import from Google Fonts, two different ones used. See _settings.variables.scss
-//import url('https://fonts.googleapis.com/css?family=Electrolize|Farro&display=swap');
+/* ubuntu-regular - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'),
+       url('../fonts/ubuntu-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ubuntu-700 - latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
+       url('../fonts/ubuntu-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/ubuntu-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-// $residential: #ABD1B5;
-// $industrial: #79B791;
-// $other: #301014;
+$darkgrey: #444;
+$dark: #031927; // very dark blue
+$carrot: #F8911B; // classic orange
+$charcoal: #324860;
+$light: #508AA8; //light blue
+$pop: #8B2506; //burnt orange red
+$standard: 'Ubuntu';
+$name: 'Electrolize';
 
-// Colors
-//Color for font
-//$darkgrey: #555555;
+h1 {
+  color: $darkgrey;
+  font-family: $name, sans-serif;
+}
 
-// Fonts
-//$title for important fields
-//$title: 'Electrolize', sans-serif;
-//$standard for bulk of website
-$standard: 'Farro', sans-serif;
+h2 {
+  color: $darkgrey;
+  font-family: $standard, sans-serif;
+}
+
+a {
+  color: $darkgrey;
+  font-family: $standard, sans-serif;
+  font-weight: 700;
+}
+
+a:visited {
+  color: $darkgrey;
+  font-family: $standard, sans-serif;
+  font-weight: 700;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
