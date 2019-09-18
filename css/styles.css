@@ -27,7 +27,7 @@ h1 {
 
 h2 {
   color: #444;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Electrolize", sans-serif; }
 
 a {
   color: #444;
@@ -48,6 +48,29 @@ a:visited {
 .heading {
   display: flex;
   justify-content: center; }
+
+@media screen and (max-width: 599px) {
+  #big-heading {
+    display: none; }
+  #small-heading {
+    font-size: 3em; }
+  .title {
+    margin: 0px; }
+  .small-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (min-width: 600px) {
+  .small-header {
+    display: none; }
+  .title {
+    margin: 25px 0px 25px 0px; }
+  #small-heading {
+    display: none; }
+  #big-heading {
+    font-size: 6em; } }
 
 .topnav {
   overflow: hidden;
@@ -104,10 +127,6 @@ a:visited {
     float: none;
     display: block;
     text-align: left; } }
-
-.title {
-  font-size: 6em;
-  margin: 25px 0px 25px 0px; }
 
 .mid-section {
   display: flex;
