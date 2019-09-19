@@ -273,7 +273,6 @@ h3 {
 .mid-row {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 15px 0px 15px 0px; }
@@ -315,7 +314,7 @@ h3 {
   border-width: 2px;
   border-color: #8b8b8b; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 911px) {
   .right-portfolio-image {
     display: none; }
   .small-portfolio-image {
@@ -323,4 +322,11 @@ h3 {
     width: 40vw;
     height: 30vw;
     min-width: 400px;
-    min-height: 300px; } }
+    min-height: 300px;
+    margin: 10px 20px 10px 20px; }
+  .mid-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 15px 0px; } }
