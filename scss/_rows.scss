@@ -1,0 +1,43 @@
+.mid-wrapper{
+  margin: 50px;
+}
+
+.mid-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mid-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.portfolio-picture{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  margin: 25px;
+  font-size: 1.2em;
+}
+
+
+.portfolio-image {
+  width: 40vw;
+  height: 30vw;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $darkgrey;
+}
