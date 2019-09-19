@@ -11,6 +11,7 @@
 .mid-row{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 15px 0px 15px 0px;
@@ -29,15 +30,44 @@
   justify-content: center;
   align-items: center;
   width: 15vw;
+  min-width: 300px;
   margin: 25px;
   font-size: 1.2em;
 }
 
+.small-portfolio-image {
+  display: none;
+}
 
-.portfolio-image {
+.left-portfolio-image {
   width: 40vw;
   height: 30vw;
+  min-width: 400px;
+  min-height: 300px;
   border-style: solid;
   border-width: 2px;
-  border-color: $darkgrey;
+  border-color: $lightgray;
+}
+
+.right-portfolio-image {
+  width: 40vw;
+  height: 30vw;
+  min-width: 400px;
+  min-height: 300px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+  .right-portfolio-image {
+      display: none;
+    }
+  .small-portfolio-image {
+    display: block;
+    width: 40vw;
+    height: 30vw;
+    min-width: 400px;
+    min-height: 300px;
+  }
 }
