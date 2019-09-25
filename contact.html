@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>design firm</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <meta name="author" content="Dan A Washburn">
+  <meta name="description" content="a demonstration website for a made-up firm">
+  <meta name="keywords" content="architecture, design, houses">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section>
+    <div class="heading">
+      <h1 class="title" id="big-heading">design firm</h1>
+      <div class="small-header">
+        <h2 class="title" id="small-heading">design</h2>
+        <h2 class="title" id="small-heading">firm</h2>
+      </div>
+    </div>
+    <div class="nav">
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="contact-banner">
+    <div class="banner">
+      <h3 class="banner-text">Contact Us</h3>
+    </div>
+  </section>
+  <section>
+    <div class="form-wrapper">
+    <form id="form">
+      <input id="name" type="text" placeholder="Name">
+      <input id="email" type="text" placeholder="Email Address">
+      <input id="phone" type="text" placeholder="Phone Number">
+      <textarea id="message" type="text" placeholder="Message (Optional)"></textarea>
+      <div class="custom-select">
+      <label>
+        <select name="reason" id="reason">
+          <option value="">&nbsp; &nbsp; &nbsp; Reason for Contacting &nbsp; &nbsp; &nbsp;</option>
+          <option value="new-build">New Build</option>
+          <option value="current-build">Current Build</option>
+          <option value="previous-build">Previous Build</option>
+        </select>
+      </label>
+    </div>
+      <input onclick="thankYou()" id="submit" type="submit" value="Submit">
+    </form>
+  </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="javascript.js" charset="utf-8"></script>
+</body>
+
+</html>
