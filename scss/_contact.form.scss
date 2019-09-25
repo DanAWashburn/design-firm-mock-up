@@ -34,17 +34,62 @@
   right: 0;
 }
 
-#form-a {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (min-width: 701px) {
+  #form {
+    width: 632px;
+  }
+
+  input {
+    width: 600px;
+  }
+
+  .custom-select {
+    width: 600px;
+  }
+
+  textarea {
+    width: 600px;
+  }
+
+  #submit {
+    width: 632px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form {
+    width: 332px;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  .custom-select {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  #submit {
+    width: 332px;
+  }
 }
 
 input {
   font-family: $standard, sans-serif;
   font-size: 1em;
   font-weight: 600;
-  width: 600px;
   height: 75px;
   padding: 0px 15px 0px 15px;
   background: transparent;
@@ -64,13 +109,9 @@ input {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  width: 600px;
   height: 75px;
   padding: 0px 15px 0px 15px;
   margin: -5px 0px 0px 0px;
-  //background: transparent;
-  //outline: none;
   color: #726659;
   border: solid 1px $darkgrey;
   border-bottom: none;
@@ -89,16 +130,13 @@ input:hover {
 }
 
 textarea {
-  width: 600px;
-  //max-width: 600px;
   height: 150px;
-  //max-height: 150px;
   padding: 15px;
   font-family: $standard, sans-serif;
   font-weight: 600;
   background: transparent;
   outline: none;
-  color: #726659;
+  color: $darkgrey;
   font-size: 1em;
   border: solid 1px $darkgrey;
   transition: all 0.3s ease-in-out;
@@ -112,11 +150,10 @@ textarea:hover {
 }
 
 #submit {
-  width: 632px;
   padding: 0;
   //margin: -5px 0px 0px 0px;
   font-family: $standard, sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 600;
   color: $darkgrey;
   outline:none;

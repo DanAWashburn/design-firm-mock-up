@@ -87,12 +87,12 @@ function thankYou() {
   let name = $('#name').val();
   let email = $("#email").val();
   let phone = $("#phone").val();
-  let city = $("#message").val();
-  let pickup = $("#reason").val();
+  let message = $("#message").val();
+  let reason = $("#reason").val();
 
   let myArr = [name, email, phone, message, reason]
   console.log(myArr);
 
 
-  alert("Thank you.");
+  alert("Thank you. We have received your inquiry and will respond shortly.");
 }
