@@ -70,6 +70,11 @@ a:visited {
     justify-content: center;
     align-items: center; } }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 @media screen and (min-width: 600px) {
   .small-header {
     display: none; }
@@ -88,7 +93,8 @@ a:visited {
   .topnav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    width: 90vw; }
   .topnav a {
     font-size: 2em; } }
 
@@ -262,6 +268,17 @@ a:visited {
 h3 {
   margin: 5px; }
 
+.sub-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+.design {
+  font-family: "Electrolize", sans-serif;
+  color: #DC6E32;
+  font-size: 1em;
+  margin: 5vw 10vw 0px 0px; }
+
 .mid-wrapper {
   margin: 50px; }
 
@@ -303,7 +320,8 @@ h3 {
   min-height: 300px;
   border-style: solid;
   border-width: 2px;
-  border-color: #dbdbdb; }
+  border-color: #dbdbdb;
+  animation: fadeIn 1.2s ease-in; }
 
 .right-portfolio-image {
   width: 40vw;
@@ -312,7 +330,8 @@ h3 {
   min-height: 300px;
   border-style: solid;
   border-width: 2px;
-  border-color: #dbdbdb; }
+  border-color: #dbdbdb;
+  animation: fadeIn 1.2s ease-in; }
 
 @media only screen and (max-width: 911px) {
   .right-portfolio-image {
@@ -323,13 +342,20 @@ h3 {
     height: 30vw;
     min-width: 400px;
     min-height: 300px;
-    margin: 10px 20px 10px 20px; }
+    margin: 10px 20px 10px 20px;
+    animation: fadeIn 1.2s ease-in; }
   .mid-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 15px 0px 15px 0px; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .contact-banner {
   display: flex;
@@ -347,7 +373,7 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 30px 0px 20px 0px;
-  width: 80vw;
+  width: 90vw;
   height: 10vw; }
 
 .banner::before {
@@ -365,7 +391,6 @@ h3 {
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 
 @media screen and (min-width: 701px) {
@@ -451,3 +476,37 @@ textarea:hover {
 
 #submit:hover {
   background: #c9c9c9; }
+
+.left-headshot {
+  filter: grayscale(100%);
+  width: 150px; }
+
+.right-headshot {
+  filter: grayscale(100%);
+  width: 150px; }
+
+.team-text {
+  width: 40vw;
+  min-width: 400px;
+  margin: 25px;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.small-headshot {
+  display: none; }
+
+@media only screen and (max-width: 911px) {
+  .right-headshot {
+    display: none; }
+  .small-headshot {
+    display: block;
+    width: 150px;
+    margin: 10px 20px 10px 20px; }
+  .mid-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 15px 0px; } }

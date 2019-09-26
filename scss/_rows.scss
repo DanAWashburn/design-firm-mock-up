@@ -8,8 +8,6 @@
   justify-content: center;
 }
 
-
-
 .mid-row{
   display: flex;
   flex-direction: row;
@@ -48,6 +46,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: $lightgray;
+  animation: fadeIn 1.2s ease-in;
 }
 
 .right-portfolio-image {
@@ -58,6 +57,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: $lightgray;
+  animation: fadeIn 1.2s ease-in;
 }
 
 @media only screen and (max-width: 911px) {
@@ -71,6 +71,7 @@
     min-width: 400px;
     min-height: 300px;
     margin: 10px 20px 10px 20px;
+    animation: fadeIn 1.2s ease-in;
   }
 
   .mid-row{
@@ -79,5 +80,15 @@
     justify-content: center;
     align-items: center;
     margin: 15px 0px 15px 0px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

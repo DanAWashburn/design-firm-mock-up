@@ -25,6 +25,18 @@
 }
 
 h3 {
-
   margin: 5px;
+}
+
+.sub-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.design {
+  font-family: $name, sans-serif;
+  color: $carrot;
+  font-size: 1em;
+  margin: 5vw 10vw 0px 0px;
 }
