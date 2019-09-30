@@ -70,11 +70,6 @@ a:visited {
     justify-content: center;
     align-items: center; } }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
 @media screen and (min-width: 600px) {
   .small-header {
     display: none; }
@@ -85,8 +80,12 @@ a:visited {
   #big-heading {
     font-size: 6em; } }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 .topnav {
-  overflow: hidden;
   background-color: #DC6E32; }
 
 @media screen and (min-width: 600px) {
@@ -157,18 +156,21 @@ a:visited {
 #tile-one-big::before {
   background: url("../images/house-four.jpg") center center;
   background-size: cover;
+  background-color: #031927;
   background-position: 70% 50%;
   animation: fadeIn 1.2s ease-in; }
 
 #tile-two-big::before {
   background: url("../images/house-two.jpg") center center;
   background-size: cover;
+  background-color: #508AA8;
   background-position: 35% 50%;
   animation: fadeIn 1.6s ease-in; }
 
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
+  background-color: #8B2506;
   background-position: 35% 50%;
   animation: fadeIn 2s ease-in; }
 
@@ -207,13 +209,16 @@ a:visited {
     margin: 20px 50px 20px 50px; }
   #tile-one-small::before {
     background: url("../images/house-four.jpg") center center;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #031927; }
   #tile-two-small::before {
     background: url("../images/house-two.jpg") center center;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #508AA8; }
   #tile-three-small::before {
     background: url("../images/house-three.jpg") center center;
-    background-size: cover; }
+    background-size: cover;
+    background-color: #8B2506; }
   .section-tile-small::before {
     content: "";
     position: absolute;
@@ -416,7 +421,9 @@ h3 {
   textarea {
     width: 300px; }
   #submit {
-    width: 332px; } }
+    width: 332px; }
+  .banner-text {
+    font-size: 1.5em; } }
 
 input {
   font-family: "Ubuntu", sans-serif;
@@ -439,7 +446,7 @@ input {
   height: 75px;
   padding: 0px 15px 0px 15px;
   margin: -5px 0px 0px 0px;
-  color: #726659;
+  color: #444;
   border: solid 1px #444;
   border-bottom: none;
   transition: all 0.3s ease-in-out; }

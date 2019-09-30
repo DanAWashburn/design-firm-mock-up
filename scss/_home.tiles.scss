@@ -14,6 +14,7 @@
 #tile-one-big::before {
   background: url("../images/house-four.jpg") center center;
   background-size: cover;
+  background-color: $dark;
   background-position: 70% 50%;
   animation: fadeIn 1.2s ease-in;
 }
@@ -21,6 +22,7 @@
 #tile-two-big::before {
   background: url("../images/house-two.jpg") center center;
   background-size: cover;
+  background-color: $light;
   background-position: 35% 50%;
   animation: fadeIn 1.6s ease-in;
 }
@@ -28,6 +30,7 @@
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
+  background-color: $pop;
   background-position: 35% 50%;
   animation: fadeIn 2s ease-in;
 }
@@ -78,16 +81,19 @@
   #tile-one-small::before {
     background: url("../images/house-four.jpg") center center;
     background-size: cover;
+    background-color: $dark;
   }
 
   #tile-two-small::before {
     background: url("../images/house-two.jpg") center center;
     background-size: cover;
+    background-color: $light;
   }
 
   #tile-three-small::before {
     background: url("../images/house-three.jpg") center center;
     background-size: cover;
+    background-color: $pop;
   }
 
   .section-tile-small::before {

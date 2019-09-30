@@ -34,14 +34,20 @@
       </div>
     </div>
   </section>
+  <!-- Area for house picture and message -->
   <section class="contact-banner">
+    <!-- Background, opaquw picture of house -->
     <div class="banner">
+      <!-- Text in front of background -->
       <h3 class="banner-text">Contact Us</h3>
     </div>
   </section>
   <section>
+    <!-- Form-wrapper puts makes all contents vertical -->
     <div class="form-wrapper">
+      <!-- Form sets width, larger for most screens and smaller and small screens -->
     <form id="form">
+      <!-- Inputs for various fields, each id hooks into "thankYou" function -->
       <input id="name" type="text" placeholder="Name">
       <input id="email" type="text" placeholder="Email Address">
       <input id="phone" type="text" placeholder="Phone Number">
@@ -56,6 +62,7 @@
         </select>
       </label>
     </div>
+    <!-- Calls function: console-logs input and alerts a message -->
       <input onclick="thankYou()" id="submit" type="submit" value="Submit">
     </form>
   </div>

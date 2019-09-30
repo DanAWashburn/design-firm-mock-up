@@ -1,17 +1,18 @@
+// Centers footer content in middle of screen
 .footer-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
+// Puts footer content in vertical alignment
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  //justify-content: center;
-
 }
 
+// Keeps footer content at manageable size on small screens
 @media only screen and (max-width: 599px) {
   h3 {
     font-size: 1em;
@@ -28,6 +29,7 @@ h3 {
   margin: 5px;
 }
 
+// Puts web-design credits in lower right portion
 .sub-footer {
   display: flex;
   flex-direction: row;

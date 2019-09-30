@@ -3,6 +3,7 @@
   justify-content: center;
 }
 
+// Sets size of area with name on small screens, breaks text into two lines
 @media screen and (max-width: 599px) {
   #big-heading {
     display: none;
@@ -21,12 +22,7 @@
   }
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
+// Sets size and spacing of title area on most screens
 @media screen and (min-width: 600px) {
   .small-header {
     display: none;
@@ -42,10 +38,14 @@
   }
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: $carrot;
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.topnav {
+  background-color: $carrot;
 }
 
 @media screen and (min-width: 600px) {
@@ -104,12 +104,16 @@ float: left;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
+
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+
   .topnav.responsive a {
     float: none;
     display: block;
