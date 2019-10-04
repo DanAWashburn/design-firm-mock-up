@@ -44,10 +44,12 @@
   justify-content: center;
 }
 
+// Turns color in nav background from orange to darker color
 .topnav {
-  background-color: $carrot;
+  background: linear-gradient(to right, $carrot, $pumpkin 150%);
 }
 
+// Arranges content in vertical nav bar for most screen sizes
 @media screen and (min-width: 600px) {
   .topnav {
     display: flex;
@@ -61,6 +63,7 @@
   }
 }
 
+// Reformats nav bar for small screens
 @media screen and (max-width: 599px) {
   .topnav {
     display: block;
@@ -72,13 +75,12 @@
 }
 
 .topnav a {
-float: left;
+  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-
   font-family: $standard;
 }
 

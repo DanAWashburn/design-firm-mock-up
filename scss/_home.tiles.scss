@@ -30,7 +30,7 @@
 #tile-three-big::before {
   background: url("../images/house-three.jpg") center center;
   background-size: cover;
-  background-color: $pop;
+  background-color: $pumpkin;
   background-position: 35% 50%;
   animation: fadeIn 2s ease-in;
 }
@@ -93,7 +93,7 @@
   #tile-three-small::before {
     background: url("../images/house-three.jpg") center center;
     background-size: cover;
-    background-color: $pop;
+    background-color: $pumpkin;
   }
 
   .section-tile-small::before {

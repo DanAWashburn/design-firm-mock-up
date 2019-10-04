@@ -86,7 +86,7 @@ a:visited {
   justify-content: center; }
 
 .topnav {
-  background-color: #DC6E32; }
+  background: linear-gradient(to right, #DC6E32, #8B2506 150%); }
 
 @media screen and (min-width: 600px) {
   .topnav {
